@@ -36,8 +36,7 @@ Existen dos lugares en memoria para almacenar elementos: la pila (**stack**) y e
 
 - Un puntero es un **tipo básico** en C (como ```int```, ```bool```, ```float```, ```etc```.) y como tal **ocupa en
   memoria una cantidad determinada** (generalmente 4 bytes).
-- Una variable de tipo puntero **contiene una dirección de memoria** en la cual se almacena **una variable de otro tipo
-  **.
+- Una variable de tipo puntero **contiene una dirección de memoria** en la cual se almacena **una variable de otro tipo**.
 - Las variables de tipo puntero en C se declara para que apunte a un tipo particular de
   datos (```int```, ```float```, ```etc```.) y no puede apuntar a ningún otro.
 
@@ -66,8 +65,7 @@ tPEntero P1;
 int* P2;
 ```
 
-- ```tPEntero``` las variables declaradas con este nuevo tipo contendrán direcciones de memoria de **variables enteras
-  **.
+- ```tPEntero``` las variables declaradas con este nuevo tipo contendrán direcciones de memoria de **variables enteras**.
 - ```P1``` se **reserva memoria** en la **pila** para guardar una **dirección de memoria** (4 bytes) que apuntara a un
   entero del **montículo**.
 - No es necesario definir un tipo para declarar un entero (como se ve en ```int* P2```), pero se recomienda hacerlo de
@@ -390,14 +388,14 @@ En C por defecto las variables se pasan **por valor**, no existe el paso por ref
 
 ```C
 // Esta función devuelve 0 o 1 dependiendo de si el puntero contiene NULL
-int IsNull (tPInteger p) {
+bool IsNull (tPInteger p) {
   if (p == NULL)
     return 1;
   else
     return 0;
 }
 // Otra opción más correcta sería
-int IsNull (tPInteger p) {
+bool IsNull (tPInteger p) {
   return (p == NULL);
 }
 ```
