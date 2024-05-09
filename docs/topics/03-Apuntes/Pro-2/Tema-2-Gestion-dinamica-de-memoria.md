@@ -36,8 +36,7 @@ Existen dos lugares en memoria para almacenar elementos: la pila (**stack**) y e
 
 - Un puntero es un **tipo básico** en C (como ```int```, ```bool```, ```float```, ```etc```.) y como tal **ocupa en
   memoria una cantidad determinada** (generalmente 4 bytes).
-- Una variable de tipo puntero **contiene una dirección de memoria** en la cual se almacena **una variable de otro tipo
-  **.
+- Una variable de tipo puntero **contiene una dirección de memoria** en la cual se almacena **una variable de otro tipo**.
 - Las variables de tipo puntero en C se declara para que apunte a un tipo particular de
   datos (```int```, ```float```, ```etc```.) y no puede apuntar a ningún otro.
 
