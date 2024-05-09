@@ -78,7 +78,7 @@ PosCondición: La cola sin datos<br/>
 <code-block lang="c" src="./Ejemplos/Tema_4/createEmptyQueue.c" collapsible="true" collapsed-title="Mostrar implementación"/>
 </li>
 <li>
-<code-block lang="tex"> enqueue (Item, Quede) \rightarrow Quede, bool </code-block><br/>
+<code-block lang="tex"> enqueue (Item, Queue) \rightarrow Queue, bool </code-block><br/>
 <p>
 Objetivo: Inserta un elemento en la cola quedando al final.<br/>
 Entrada:<br/>
@@ -254,12 +254,12 @@ Salida: Verdadero si la pila está vacía, falso en caso contrario<br/>
 El TAD Cola y el TAD Pila son muy similares, por eso en estos apuntes han sido unificados en un solo tema.
 
 <table>
-<tr><td>TAD Cola (Quede)</td><td>TAD Pila (Stack)</td></tr>
+<tr><td>TAD Cola (Queue)</td><td>TAD Pila (Stack)</td></tr>
 <tr><td>El primero en entrar, el primero en salir (FIFO)</td><td>El último en entrar, el primero en salir (LIFO)</td></tr>
 <tr><td><code>createEmptyQueue()</code></td><td><code>createEmptyStack()</code></td></tr>
-<tr><td><code>isEmptyQueue(Quede)</code></td><td><code>isEmptyStack(Stack)</code></td></tr>
-<tr><td><code>enquede(Item, Quede)</code> y <code>dequede(Quede)</code>: Añadir y Eliminar un elemento a la cola</td><td><code>push(Item, Stack)</code> y <code>pop(Stack)</code>: Añadir y Eliminar un elemento a la pila</td></tr>
-<tr><td><code>front(Quede)</code>: Devuelve el elemento <code>n</code> de la cola (el primero en entrar).</td><td><code>peek(Stack)</code>: Devuelve el elemento <code>0</code> de la pila (el último en entrar).</td></tr>
+<tr><td><code>isEmptyQueue(Queue)</code></td><td><code>isEmptyStack(Stack)</code></td></tr>
+<tr><td><code>enqueue(Item, Queue)</code> y <code>dequeue(Queue)</code>: Añadir y Eliminar un elemento a la cola</td><td><code>push(Item, Stack)</code> y <code>pop(Stack)</code>: Añadir y Eliminar un elemento a la pila</td></tr>
+<tr><td><code>front(Queue)</code>: Devuelve el elemento <code>n</code> de la cola (el primero en entrar).</td><td><code>peek(Stack)</code>: Devuelve el elemento <code>0</code> de la pila (el último en entrar).</td></tr>
 <tr>
 <td>
 <code-block lang="mermaid">
