@@ -112,7 +112,7 @@ flowchart TB
 <code-block lang="tex"> leftChild(Tree) \rightarrow Tree </code-block><br/>
 </li>
 <li>
-<code-block lang="tex"> rightChild(Tree) \rightarrow bool </code-block><br/>
+<code-block lang="tex"> rightChild(Tree) \rightarrow Tree </code-block><br/>
 </li>
 <li>
 <code-block lang="tex"> root(Tree) \rightarrow Item </code-block><br/>
